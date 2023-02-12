@@ -38,6 +38,21 @@ void rotaterstar(int n){
     }
 };
 
+void star(int n){
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<= n-i; j++){
+            cout<<" ";
+        };
+        for(int k = 1; k<= i*2-1; k++){
+            cout<<"*";
+        };
+        for(int m=1; m<= n-1; m++){
+            cout<<" ";
+        };
+        cout<<endl;
+    };
+}
+
 
 int main(){
     cout<<"Patterns"<<endl;
@@ -45,5 +60,6 @@ int main(){
     recpat(n);
     hollowrec(n);
     rotaterstar(n);
+    star(n);
     return 0;
 };
