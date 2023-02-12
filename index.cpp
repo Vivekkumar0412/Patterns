@@ -51,6 +51,23 @@ void star(int n){
         };
         cout<<endl;
     };
+};
+
+void invertedstar(int n){
+    int c =n;
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<=i; j++){
+            cout<<" ";
+        };
+        for(int k = 1; k<=c; k++){
+            cout<<"*";
+        };
+        c = c-2;
+        for(int m = 1;m<=i;m++){
+            cout<<" ";
+        };
+        cout<<endl;
+    };
 }
 
 
@@ -61,5 +78,6 @@ int main(){
     hollowrec(n);
     rotaterstar(n);
     star(n);
+    invertedstar(n);
     return 0;
 };
